@@ -61,5 +61,5 @@ var user1 = whatsauth.LoginInfo{
 	Phone:    "user_phone",
 	Username: "user_name",
 	Uuid:     "besan_users",
-	Login:    "2md5",
+	Login: "2md5",
 }
