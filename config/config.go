@@ -7,5 +7,5 @@ var Iteung = fiber.Config{
 	CaseSensitive: true,
 	StrictRouting: true,
 	ServerHeader:  "Iteung",
-	AppName:       "Message Router",
+	AppName:       "Message Router",
 }

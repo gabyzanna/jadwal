@@ -1,7 +1,7 @@
 package url
 
 import (
-	"iteung/controller"
+	"github.com/gabyzanna/jadwal/controller"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/websocket/v2"
@@ -9,13 +9,11 @@ import (
 
 func Web(page *fiber.App) {
 	page.Post("/api/whatsauth/request", controller.PostWhatsAuthRequest)  //API from user whatsapp message from iteung gowa
-	page.Get("/ws/whatsauth/qr", websocket.New(controller.WsWhatsAuthQR)) //websocket whatsauth
-
-	page.Get("/", controller.Sink)
-	page.Post("/", controller.Sink)
-	page.Put("/", controller.Sink)
-	page.Patch("/", controller.Sink)
-	page.Delete("/", controller.Sink)
-	page.Options("/", controller.Sink)
-
+	page.Get("/ws/whatsauth/qr", websocket.New(controller.WsWhatsAuthQR)) //websocket whatsaut
+	page.Get("/", controller.GetHome)
+	page.Get("/tam", controller.GetTam)
+	page.Get("/undangan", controller.GetDataUndanganRapat)
+	page.Get("/peserta", controller.GetDataPesertaRapat)
+	page.Get("/waktu", controller.GetDataWaktuRapat)
+	page.Get("/rapat", controller.GetDataRapatMulai)
 }
