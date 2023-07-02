@@ -34,27 +34,3 @@ func GetHome(c *fiber.Ctx) error {
 	return c.JSON(getip)
 }
 
-func GetTam(c *fiber.Ctx) error {
-	getkot := bella.GetDataListTamu("BOGOR")
-	return c.JSON(getkot)
-}
-
-func GetDataUndanganRapat(c *fiber.Ctx) error {
-	getun := bella.GetDataUndanganRapat("Rapat Umum")
-	return c.JSON(getun)
-}
-
-func GetDataPesertaRapat(c *fiber.Ctx) error {
-	getpes := bella.GetDataPesertaRapat("ULBI")
-	return c.JSON(getpes)
-}
-
-func GetDataWaktuRapat(c *fiber.Ctx) error {
-	getwa := bella.GetDataWaktuRapat("Generasi Muda")
-	return c.JSON(getwa)
-}
-
-func GetDataRapatMulai(c *fiber.Ctx) error {
-	getra := bella.GetDataRapatMulai("Jokowi")
-	return c.JSON(getra)
-}
