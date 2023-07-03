@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/aiteung/atdb v0.0.11
 	github.com/aiteung/musik v0.0.5
+	github.com/gabyzanna/bella v0.0.8
 	github.com/gofiber/fiber/v2 v2.47.0
 	github.com/gofiber/websocket/v2 v2.2.1
 	github.com/whatsauth/whatsauth v0.2.5

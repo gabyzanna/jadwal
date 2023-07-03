@@ -16,16 +16,13 @@ var origins = []string{
 	"https://dias.ulbi.ac.id",
 	"https://iteung.ulbi.ac.id",
 	"https://whatsauth.github.io",
-	"https://github.com/gabyzanna",
-	"https://gocroot.github.io/",
-	"https://jadwal-0fc5e0bbd0c5.herokuapp.com/",
 }
 
 var Internalhost string = os.Getenv("INTERNALHOST") + ":" + os.Getenv("PORT")
 
 var Cors = cors.Config{
 	AllowOrigins:     strings.Join(origins[:], ","),
-	AllowHeaders:     "Origin,Login",
+	AllowHeaders:     "Origin",
 	ExposeHeaders:    "Content-Length",
 	AllowCredentials: true,
 }
