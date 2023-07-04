@@ -19,6 +19,7 @@ var origins = []string{
 	"https://whatsauth.github.io",
 	"https://gabyzanna.github.io",
 	"https://gocroot.github.io/",
+	"http://127.0.0.1:5500/js/charts-demo.js",
 	"https://jadwal-0fc5e0bbd0c5.herokuapp.com/",
 	"https://jadwal-0fc5e0bbd0c5.herokuapp.com/mhs",
 }
